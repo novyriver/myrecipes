@@ -10,6 +10,7 @@ class RecipeTest < ActiveSupport::TestCase
     assert @recipe.valid?
   end
   
+
   test "name should be present" do
     @recipe.name = " "
     assert_not @recipe.valid?
