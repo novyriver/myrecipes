@@ -22,13 +22,13 @@ function scrollToBottom(){
   }
 }
 
-function submitMessage(evvent){
+function submitMessage(event){
   event.preventDefault();
   $('#new_message').submit();
 }
 
 $(document).on('keypress', '[data-behavior~=room_speaker]', function(event){
-   if (event.keyCode == 13){
+   if (event.keyCode === 13){
      submitMessage(event);
    }
 });
