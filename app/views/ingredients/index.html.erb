@@ -1,4 +1,4 @@
-<%= render 'shared/page_title', title: "Available Ingredients" %>
+<%= render 'shared/page_title', title: "すべての素材" %>
 
 <div align="center">
   <%= will_paginate %>
@@ -9,7 +9,7 @@
           <li class="chef-title"><%= link_to ing.name.capitalize, ingredient_path(ing) %></li>
           <li><small><%= pluralize(ing.recipes.count, "recipe") if ing.recipes %></small></li>
           <% if logged_in? && current_chef.admin? %>
-            <li><%= link_to "Edit this ingredients", edit_ingredient_path(ing) %></li>
+            <li><%= link_to "この素材を編集する", edit_ingredient_path(ing) %></li>
           <% end %>
         </div>
       </div>

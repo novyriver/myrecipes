@@ -1,4 +1,4 @@
-<%= render 'shared/page_title', title: "ChefChat" %>
+<%= render 'shared/page_title', title: "チャット" %>
 
 <div class="row chat-container">
   <div class="col-md-8 center-block">
@@ -9,7 +9,7 @@
   <div class="message-container">
     <%= form_for(@message, remote: true, :html => {class: "form_horizontal", role: "form"}) do |f| %>
       <%= f.text_area :content, class: "form-control", data: { behavior: "room_speaker" }, placeholder: "Say something!" %>
-      <%= f.submit "Send", class: 'btn btn-primary', data: { send:"message" } %>
+      <%= f.submit "送信", class: 'btn btn-primary', data: { send:"message" } %>
     <% end %>
     </div>
   </div>

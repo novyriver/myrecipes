@@ -1,26 +1,26 @@
 <div class="jumbotron center">
-  <h1>Welcome to MyRecipes</h1>
-  <h2>The best recipe sharing app!</h2>
-  <p><%= link_to "Sign up for the app", signup_path, class: "btn btn-danger btn-lg btn-xlarge" %></p>
+  <h1>編みログ</h1>
+  <h2>knitting info sharing app!</h2>
+  <p><%= link_to "会員登録", signup_path, class: "btn btn-danger btn-lg btn-xlarge" %></p>
 </div>
 
 <div class="row">
         <div class="col-lg-4">
-          <h2>Heading</h2>
-          <p class="text-danger">As of v9.1.2, Safari exhibits a bug in which resizing your browser horizontally causes rendering errors in the justified nav that are cleared upon refreshing.</p>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-primary btn-xlarge" href="#" role="button">View details &raquo;</a></p>
+          <h2>作品をさがす</h2>
+          <p>みんなと作品の情報を共有できます</p>
+          <p><%= link_to "詳細を見る", recipes_path, class: "btn btn-primary btn-xlarge" %></p>
         </div>
         <div class="col-lg-4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-primary btn-xlarge" href="#" role="button">View details &raquo;</a></p>
-       </div>
-        <div class="col-lg-4">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.</p>
-          <p><a class="btn btn-primary btn-xlarge" href="#" role="button">View details &raquo;</a></p>
+          <h2>素材をさがす</h2>
+          <p>使いたい素材から作品を選べます</p>
+          <p><%= link_to "詳細を見る", ingredients_path, class: "btn btn-primary btn-xlarge" %></p>
         </div>
-      </div>
+        <div class="col-lg-4">
+          <h2>チャットをつかう</h2>
+          <p>会員になれば、チャット機能が使えるようになります </p>
+          <p><%= link_to "詳細を見る", signup_path, class: "btn btn-primary btn-xlarge" %></p>
+        </div>
+</div>
+        
       
 

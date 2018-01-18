@@ -8,18 +8,18 @@
            <%= f.label :name %>
          </div> 
          <div class="col-md-8">
-           <%= f.text_field :name, class: "form-control", placeholder: "Enter ingredient", autofocus: true %>
+           <%= f.text_field :name, class: "form-control", placeholder: "素材を入力する", autofocus: true %>
          </div>
       </div>
       <div class="form-group">
         <div class="col-md-offset-2 col-md-10">
-          <%= f.submit(@ingredient.new_record? ? "Add Ingredient" : "Update Ingredient",
+          <%= f.submit(@ingredient.new_record? ? "素材を追加する" : "素材を更新する",
                                         class: "btn btn-primary btn-lg btn-xlarge") %>
         </div>
       </div>
 
     <% end %> 
     <div class="col-md-4 col-md-offset-4 colormatch">
-      [ <%= link_to "Cancel request and return to recipes listing", recipes_path %> ]
+      [ <%= link_to "前のページへ戻る", recipes_path %> ]
     </div>
 </div>
